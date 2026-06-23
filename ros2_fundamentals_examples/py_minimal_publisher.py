@@ -31,7 +31,7 @@ class MinimalPyPublisher(Node):
         """
         
         # initialize the node with a name
-        super().__init__('minimal_py_publisher')
+        super().__init__('py_minimal_publisher')
 
         # create a publisher on the topic with a queue size of 10 messages
         self.publisher_1 = self.create_publisher(String, '/py_example_topic', 10)
@@ -71,13 +71,13 @@ def main(args = None):
     rclpy.init(args = args)
 
     # create an instance of the Minimal Publisher node
-    minimal_py_publisher = MinimalPyPublisher()
+    py_minimal_publisher = MinimalPyPublisher()
 
     # run the node
-    rclpy.spin(minimal_py_publisher)
+    rclpy.spin(py_minimal_publisher)
 
     # destroy the node explicitly
-    minimal_py_publisher.destroy_node()
+    py_minimal_publisher.destroy_node()
 
     # shutdown ROS 2 communication
     rclpy.shutdown()

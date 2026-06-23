@@ -24,7 +24,7 @@ from std_msgs.msg import String
 class MinimalPySubscriber(Node):
     def __init__(self):
         # initialize the node with a name
-        super().__init__('minimal_py_subscriber')
+        super().__init__('py_minimal_subscriber')
 
         # create a subscriber on the topic with a queue size of 10 messages
         self.subscriber_1 = self.create_subscription(
@@ -42,13 +42,13 @@ def main(args=None):
     rclpy.init(args=args)
 
     # create the node object
-    minimal_py_subscriber = MinimalPySubscriber()
+    py_minimal_subscriber = MinimalPySubscriber()
 
     # keep the node running and listening for messages
-    rclpy.spin(minimal_py_subscriber)
+    rclpy.spin(py_minimal_subscriber)
 
     # destroy the node explicitly
-    minimal_py_subscriber.destroy_node()
+    py_minimal_subscriber.destroy_node()
 
     # shutdown the ROS 2 python client library
     rclpy.shutdown()
