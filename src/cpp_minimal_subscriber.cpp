@@ -41,6 +41,7 @@ private:
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscriber_; // Subscriber object
 };
 
+#ifndef TESTING_EXCLUDE_MAIN
 int main(int argc, char * argv[]) {
     rclcpp::init(argc, argv); // Initialize the ROS 2 system
 
@@ -51,3 +52,4 @@ int main(int argc, char * argv[]) {
 
     return 0;
 }
+#endif
