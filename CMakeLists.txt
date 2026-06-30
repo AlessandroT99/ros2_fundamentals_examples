@@ -32,10 +32,11 @@ install(
   DESTINATION share/${PROJECT_NAME}
 )
 
-install(
-  DIRECTORY include/
-  DESTINATION include
-)
+# Needed only if header files exist
+# install(
+#  DIRECTORY include/
+#  DESTINATION include
+# )
 
 # install cpp executables
 install(TARGETS
