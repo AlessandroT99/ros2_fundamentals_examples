@@ -2,12 +2,13 @@
 
 A collection of fundamental ROS2 examples demonstrating core concepts and patterns for ROS2 development.
 
-Guide create attenting the ROS2 class on youtube of Automatic Addison. 
+Guide created following the ROS2 class on YouTube by Automatic Addison.  
 [Link to his channel](https://www.youtube.com/@automaticaddison).
 
-## Description
+## Package Information
 
-This package provides basic examples for learning ROS2 concepts, including publishers, subscribers, services, and other fundamental ROS2 patterns. The examples are written in Python and C++ to demonstrate different implementation approaches.
+**Package Name:** `ros2_fundamentals_examples`  
+**Description:** This package provides basic examples for learning ROS2 concepts, including publishers, subscribers, services, and other fundamental ROS2 patterns. The examples are written in Python and C++ to demonstrate different implementation approaches.
 
 ## Package Contents
 
@@ -141,12 +142,12 @@ colcon test-result --verbose
 
 This package is licensed under the Apache-2.0 License. See the LICENSE file for details.
 
-## Author
-
-Alessandro Tiozzo
-
 ## ROS2 Resources
 
 - [ROS2 Documentation](https://docs.ros.org/en/humble/)
 - [ROS2 Tutorials](https://docs.ros.org/en/humble/Tutorials.html)
 - [ROS2 Python API](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html)
+
+## Author
+- Repository: [Alessandro Tiozzo](https://github.com/AlessandroT99)
+- README: [readme-agent](https://github.com/AlessandroT99/readme-agent) reviewed by [Alessandro Tiozzo](https://github.com/AlessandroT99)
